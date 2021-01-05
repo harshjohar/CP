@@ -10,26 +10,9 @@ int main(void)
         scanf("%i", &n);
         scanf("%i", &k);
 
-        int arr[n];
-        for(int j = 0; j < n; j++) {
-            arr[j] = 0;
-        }
+        int c = k - k%n;
+        int result = c/n;
 
-        while(k > 0) {
-            for(int l = 0; l < n; l++) {
-                arr[l]++;
-                k--;
-                if(k<=0) {
-                    break;
-                }
-            }
-        }
-        int min = arr[0];
-        for(int q = 0; q < n; q++) {
-            if(arr[q] < min) {
-                min = arr[q];
-            }
-        }
-        printf("%i\n", min);
+        printf("%i", result);
     }
 }

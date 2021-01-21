@@ -7,20 +7,9 @@ int main() {
     long long arr[n];
 
     for(long long i=0; i<n; i++) {
-        long long budget;
-        cin>>budget;
-        arr[i]=budget;
+        cin>>arr[i];
     }
-    for(long long i=0; i<n; i++) {
-        // sorting the array
-        for(long long j=0; j<n; j++) {
-            if(arr[i] > arr[j]) {
-                long long tmp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = tmp;
-            }
-        }
-    }
+    sort(arr, arr+n, greater<int>());
 
     long long cost = arr[0];
     long long revenue = arr[0];
@@ -34,4 +23,5 @@ int main() {
         }
     }
     cout<<revenue<<endl;
+    return 0;
 }

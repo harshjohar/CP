@@ -1,25 +1,30 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int t;
-    cin>>t;
-    while(t--) {
-        int n, k;
-        int marks[k];
-        for(int i=0; i<k; i++) {
-            cin>>marks[i];
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int t, n, k;
+    cin >> t;
+    for(int it = 0; it < t; it++) {
+        cin >> n >> k;
+        int arr[k] = {};
+        for (int ik = 0; ik < k; ik++){
+            cin >> arr[ik];
         }
-        for(int j=0; j<n; j++) {
-            int ans=0;
+        for (int in = 0; in<n; in++){
             string s;
-            cin>>s;
-            for(int p=0; p<k; p++) {
-                if(s[p] == '1') {
-                    ans+=marks[p];
-                }   
+            long long ans = 0;
+            cin >> s;
+            for(int ik = 0; ik < k; ik++){
+                if (s[ik]=='1'){
+                    ans+=arr[ik];
+                }
             }
-            cout<<"ans"<<ans<<'\n';
+            std::cout << ans << "\n";
         }
     }
+    return 0;
 }

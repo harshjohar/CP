@@ -1,40 +1,35 @@
 #include <stdio.h>
+#include <stdbool.h>
+typedef long long int ll;
 
-#define prime_true 1
-#define prime_false 0
-
-int is_prime(int perhaps) {
-    int limit;
-    int testfactor;
-
-    limit = (perhaps >> 1)+1;
-    for(testfactor = 3; testfactor <= limit; ++testfactor) {
-        if ((perhaps%testfactor)==0) {
-            return prime_false;
+bool isPrime(ll n) {
+    if(n<2) {
+        return false;
+    }
+    if(n<=3) {
+        return true;
+    }
+    if(n%2==0 || n%3==0) {
+        return false;
+    }
+    for(ll i=5; i*i <= n; i=i+6) {
+        if(n%i==0 || n%(i+2)==0) {
+            return false;
         }
     }
-    return prime_true;
+    return true;
 }
-
-int next_prime(int val) {
-    int perhaps;
-    if(val < 2) {
-        return 2;
-    }
-    perhaps = (val+1) | 1;
-    while(is_prime(perhaps) != prime_true) {
-        perhaps+=2;
-    }
-    return perhaps;
-}
-
+// remember \n always :(
 int main(void) {
     int t;
     scanf("%d", &t);
     while(t--) {
-        int l, r;
-        scanf("%d%d", &l, &r);
-        int ans = next_prime(r);
-        printf("%d", ans);
+        ll l, r;
+        scanf("%lld%lld", &l, &r);
+        r++;
+        while(!isPrime(r)) {
+            r++;
+        }
+        printf("%lld\n", r);
     }
 }

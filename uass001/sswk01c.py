@@ -1,16 +1,20 @@
-n = int(input())
-sticks = list(map(int, input().split()))
-zeroes = 0
-sticks.sort()
-# TLE
-while len(sticks) > 0:
-    cut_length = sticks[0]
-    for i in range(len(sticks)):
-        sticks[i]-=cut_length
-    print(len(sticks))
-    # print(sticks)
-    while sticks[0] == 0:
-        sticks.pop(0)
-        if len(sticks) == 0:
-            break
-    # print(sticks)
+n=int(input())
+arr=list(map(int,input().split()))
+    
+temp = [0]*(5000000)
+    
+for i in arr:
+    temp[i] +=1
+        
+    
+length = len(arr)
+i = 0
+    
+while length > 0 and i <len(temp):
+    if temp[i] ==0:
+        pass
+    else:
+        print(length)
+        length -=temp[i]
+        
+    i+=1

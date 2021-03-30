@@ -39,7 +39,7 @@ int main() {
     vector<vector<int>> queries;
     vector<string> ans;
     while(q--) {
-        cin>>type>>x1>>x2>>y1>>y2;
+        cin>>type>>x1>>y1>>x2>>y2;
         x1--; y1--; x2--; y2--;
         if(type == 1) {
             for(i=x1; i<=x2; i++) grid[i][y1]=1, grid[i][y2] = 1;

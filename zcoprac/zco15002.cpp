@@ -2,8 +2,7 @@
 #include <algorithm>
 typedef long long int lld;
 using namespace std;
-// brute force op
-// TLE(partial correct.....)
+
 int main() {
     int n, k;
     cin>>n>>k;
@@ -12,11 +11,10 @@ int main() {
         cin>>num[i];
     }
     int count = 0;
-    for(int i=0; i<n; i++) {
-        for(int j=i+1; j<n; j++) {
-            if(abs(num[i]-num[j]) >= k) {
-                count++;
-            }
+    sort(num, num+n);
+    for(int i=0; i<n-1; i++) {
+        if(abs(num[i] - num[i+1]) >= k) {
+            count+=(n-i-1);
         }
     }
     cout<<count<<'\n';

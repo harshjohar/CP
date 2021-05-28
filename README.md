@@ -22,3 +22,8 @@
 + 344a [https://codeforces.com/contest/344/problem/A]
 + 405a [https://codeforces.com/contest/405/problem/A]
 + 791a [https://codeforces.com/contest/791/problem/A]
+
+### Day4
++ 66b [https://codeforces.com/contest/66/problem/B]
++ 680b [https://codeforces.com/contest/680/problem/B]
++ 16b [https://codeforces.com/contest/16/problem/B]

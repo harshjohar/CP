@@ -31,4 +31,9 @@
 ### Day5
 + 463b [https://codeforces.com/contest/463/problem/B]
 + 688b [https://codeforces.com/contest/688/problem/B]
-+ 451b [https://codeforces.com/contest/451/problem/B] -- wrong logic yet....
++ 451b [https://codeforces.com/contest/451/problem/B]
+
+### Day6
++ 102b [https://codeforces.com/contest/102/problem/B]
++ 1523a [https://codeforces.com/contest/1523/problem/A]
++ 1523b [https://codeforces.com/contest/1523/problem/B]

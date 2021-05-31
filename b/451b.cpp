@@ -12,46 +12,69 @@ using namespace std;
 #define fastio ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0)
 #define endl "\n";
 
+const int N = (int)1e5+5;
+int a[N], b[N];
+
 int32_t main() {
     fastio;
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     freopen("input.txt", "r", stdin);
+    //     freopen("output.txt", "w", stdout);
+    // #endif
     
     int n; cin>>n;
-    int arr[n];
     loop(i, 0, n) {
-        cin>>arr[i];
+        cin>>a[i];
+        b[i]=a[i];
     }
 
-    int check = 0;
-    int cnt = 1; // counts the number of contiguous non inc sequences.
-    int start = 0;
-    int end = 0;
-    loop(i, 1, n) {
-        if(arr[i]<arr[i-1]) {
-            if(check) {
-                start = i-1;
-                end = i;
-                cnt++;
-            }
-            else {
-                end = i;
-            }
-        }
-        else {
-            check = 0;
-        }
-        cout<<"Start: "<<start<<" "<<"End: "<<end<<endl;
+    map<int, int> mapping;
+    sort(b, b+n);
+
+    loop(i, 0, n) {
+        mapping[b[i]]=i;
     }
-    cout<<"cnt: "<<cnt<<endl;
-    if(cnt==1) {
+
+    loop(i, 0, n) {
+        a[i]=mapping[a[i]];
+    }
+
+    int left = -1;
+    loop(i, 0, n) {
+        if(a[i] != i) {
+            left=i;
+            break;
+        }
+    }
+
+    int right = -1;
+    loopb(i, n-1, 0) {
+        if(a[i]!=i) {
+            right=i;
+            break;
+        }
+    }
+
+    if(left==-1||right==-1) {
         cout<<"yes"<<endl;
-        cout<<start+1<<" "<<end+1;
+        cout<<1<<" "<<1<<endl;
     }
     else {
-        cout<<"no"<<endl;
+        reverse(a+left, a+right+1);
+        int ok = true;
+        loop(i, 0, n) {
+            if(a[i]!=i) {
+                ok=false;
+            }
+        }
+
+        if(ok) {
+            cout<<"yes"<<endl;
+            cout<<left+1<<" "<<right+1<<endl;
+        }
+        else {
+            cout<<"no"<<endl;
+        }
     }
     return 0;
 }

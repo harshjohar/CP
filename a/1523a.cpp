@@ -24,46 +24,32 @@ int32_t main() {
         int n, m;
         cin>>n>>m;
         string cells; cin>>cells;
-        if(m>n) {
-            m=n;
-        }
-        int moves=0;
-        vi ones(0);
-        loop(i, 0, n) {
-            if(cells[i]=='1') ones.pb(i);
-        }
-        vi new_ones(0);
         string cells_c = cells;
-        while(moves<m) {
-            loop(i, 0, ones.size()) {
-                int idx = ones[i];
-                if(idx<n-2) {
-                    if(cells[idx+2]!='1') {
-                        cells_c[idx+1]='1';
-                        new_ones.push_back(idx+1);
+        int moves_count = 0;
+        int check = 1;
+        while(check) {
+            moves_count++;
+            loop(i, 0, n) {
+                if(cells[i]=='0') {
+                    if((cells[i-1]=='1' and cells[i+1]=='0') or (i==n-1 and cells[i-1]=='1')) {
+                        cells_c[i]='1';
+                        i++;
                     }
-                } else if(idx==n-2) {
-                    cells_c[idx+1]='1';
-                    new_ones.pb(idx+1);
-                }
-
-                if(idx>1) {
-                    if(cells[idx-2]!='1') {
-                        cells_c[idx-1]='1';
-                        new_ones.pb(idx-1);
+                    if((cells[i-1]=='0' and cells[i+1]=='1') or (i==0 and cells[i+1]=='1')) {
+                        cells_c[i]='1';
                     }
-                } else if(idx==1) {
-                    cells_c[idx-1]='1';
-                    new_ones.pb(idx-1);
                 }
             }
-            // cout<<cells<<" Moves: "<<moves<<endl;
-            moves++;
-            ones = new_ones;
-            cells = cells_c;
-        }
+            cells=cells_c;
+            // cout<<cells<<endl;
+            if(moves_count>n) {
+                check=0;
+            }
+            if(moves_count>=m) {
+                check=0;
+            }
+        } 
         cout<<cells<<endl;
     }
-    
     return 0;
 }

@@ -27,3 +27,8 @@
 + 66b [https://codeforces.com/contest/66/problem/B]
 + 680b [https://codeforces.com/contest/680/problem/B]
 + 16b [https://codeforces.com/contest/16/problem/B]
+
+### Day5
++ 463b [https://codeforces.com/contest/463/problem/B]
++ 688b [https://codeforces.com/contest/688/problem/B]
++ 451b [https://codeforces.com/contest/451/problem/B] -- wrong logic yet....

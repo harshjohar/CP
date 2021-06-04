@@ -37,3 +37,7 @@
 + 102b [https://codeforces.com/contest/102/problem/B]
 + 1523a [https://codeforces.com/contest/1523/problem/A]
 + 1523b [https://codeforces.com/contest/1523/problem/B]
+
+### Day7
++ 476b [https://codeforces.com/contest/476/problem/B]
++ 215b [https://codeforces.com/contest/215/problem/B]

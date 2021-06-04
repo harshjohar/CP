@@ -14,17 +14,19 @@ using namespace std;
 
 int32_t main() {
     fastio;
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
-    int n; cin>>n;
-    int curr_energy = 0, curr_height;
-    int max_pylon_height = 0;
-    loop(i, 0, n) {
-        cin>>curr_height;
-        if(curr_height>max_pylon_height) max_pylon_height=curr_height;
+    // #ifndef ONLINE_JUDGE
+    //     freopen("input.txt", "r", stdin);
+    //     freopen("output.txt", "w", stdout);
+    // #endif
+    
+    testcase {
+        int n; cin>>n;
+        int raw_list[n];
+        loop(i, 0, n) cin>>raw_list[i];
+        int curr_lvl = 1;
+        loop(i, 0, n) {
+
+        }
     }
-    cout<<max_pylon_height<<endl;
     return 0;
 }

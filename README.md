@@ -41,5 +41,11 @@
 ### Day7
 + 476b [https://codeforces.com/contest/476/problem/B]
 + 215b [https://codeforces.com/contest/215/problem/B]
-+ 1521a [https://codeforces.com/contest/215/problem/B]
-+ 1521b [https://codeforces.com/contest/215/problem/B]
++ 1521a [https://codeforces.com/contest/1521/problem/A]
++ 1521b [https://codeforces.com/contest/1521/problem/B]
+
+### Day8
++ 1535a [https://codeforces.com/contest/1535/problem/A]
++ 1535b [https://codeforces.com/contest/1535/problem/B]
++ 376b [https://codeforces.com/contest/376/problem/B]
++ 352b [https://codeforces.com/contest/352/problem/B] -- pending

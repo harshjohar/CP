@@ -11,6 +11,9 @@ using namespace std;
 #define s second
 #define fastio ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0)
 #define endl "\n";
+#define debug(x) cout<<(#x)<<": "<<x<<endl
+#define debugvi(v) cout<<(#v)<<": "; loop(i, 0, v.size()) cout<<v[i]<<" "; cout<<endl;
+
 
 int32_t main() {
     fastio;
@@ -19,14 +22,10 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    testcase {
-        int n; cin>>n;
-        int raw_list[n];
-        loop(i, 0, n) cin>>raw_list[i];
-        int curr_lvl = 1;
-        loop(i, 0, n) {
+    int n; cin>>n;
+    vi entries(n);
+    loop(i, 0, n) cin>>entries[i];
 
-        }
-    }
+    
     return 0;
 }

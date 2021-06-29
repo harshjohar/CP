@@ -22,6 +22,22 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    
+    int n, m; cin>>n>>m;
+    vi houses(m);
+    for(int &p:houses) {
+        cin>>p;
+    }
+    int time = -1;
+    time+=houses[0];
+    loop(i, 1, m) {
+        if(houses[i]>=houses[i-1]) {
+            time+=(houses[i]-houses[i-1]);
+        }
+        else {
+            time+=(n-houses[i-1]+houses[i]);
+        }
+        // debug(time);
+    }
+    cout<<time<<endl;
     return 0;
 }

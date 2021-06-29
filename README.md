@@ -54,3 +54,19 @@
 + 1536a [https://codeforces.com/contest/1536/problem/B]
 + 1538a [https://codeforces.com/contest/1538/problem/B]
 + 1538b [https://codeforces.com/contest/1538/problem/B]
+
+### Day10
++ 127a [https://codeforces.com/contest/127/problem/A]
++ 1539a [https://codeforces.com/contest/1539/problem/A]
+
+### Day11
++ 339a [https://codeforces.com/contest/339/problem/A]
++ 339b [https://codeforces.com/contest/339/problem/B]
++ 1525b [https://codeforces.com/contest/1525/problem/B]
+
+### Incompelete
++ 1541a
++ 1534a
++ 1504a
++ 1529b
++ 1537b

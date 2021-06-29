@@ -22,6 +22,26 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    
+    string s;
+    cin>>s;
+    int n = s.length();
+    int ans[n/2 + 1];
+    int j=0;
+    for(int i=0; i<n; i+=2) {
+        ans[j]=s[i]-'0';
+        j++;
+    }
+
+    sort(ans, ans+(n/2+1));
+    // loop(i, 0, n/2+1) cout<<ans[i]<<' ';
+    // cout<<endl;
+    string final="";
+    int i=0;
+    for(i=0; i<n/2; i++) {
+        final += (char)(ans[i]+(int)'0');
+        final += '+';
+    }
+    final+=(char)(ans[i]+(int)'0');
+    cout<<final<<endl;
     return 0;
 }

@@ -21,7 +21,19 @@ int32_t main() {
     //     freopen("input.txt", "r", stdin);
     //     freopen("output.txt", "w", stdout);
     // #endif
-    
-    
+    testcase {
+        int n, m; cin>>n>>m;
+        vector<string> matrix;
+        loop(i, 0, n) {
+            string x; cin>>x;
+            matrix.pb(x);
+        }
+
+        loop(i, 0, n) {
+            loop(j, 0, m) {
+                if()
+            }
+        }
+    }    
     return 0;
 }

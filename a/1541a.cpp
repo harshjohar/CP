@@ -22,6 +22,24 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    
+    testcase {
+        int n; cin>>n;
+        if(!(n%2)) {
+            loop(i, 1, n+1) {
+                cout<<i+1<<' ';
+                cout<<i<<' ';
+                i++;
+            }
+            cout<<endl;
+        }
+        else {
+            loop(i, 1, n-1) {
+                cout<<i+1<<' ';
+                cout<<i<<' ';
+            }
+            cout<<
+        }
+
+    }
     return 0;
 }

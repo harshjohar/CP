@@ -22,6 +22,29 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    
+    testcase {
+        int n, x, k;
+        cin>>n>>x>>k;
+        if(k<x) {
+            cout<<0<<endl;
+        }
+        if(k==x) {
+            cout<<n-1<<endl;
+        }
+        int sub=0, sum=0;
+        if(k>x) {
+            if(((n-1)*x)%k==0) {
+                int fi = (k*(k-1)/2);
+                int se = k*(n-k);
+                sum = fi+se;
+            }
+            else {
+
+                sum = n*(n-1)/2;
+                sub = (n-1)*x/k;
+            }
+            cout<<sum-sub<<endl;
+        }
+    }
     return 0;
 }

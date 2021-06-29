@@ -22,6 +22,15 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
+    testcase {
+        int n;
+        vi v(n);
+        loop(i, 0, n) {
+            cin>>v[i];
+        }
+
+        
+    }
     
     return 0;
 }

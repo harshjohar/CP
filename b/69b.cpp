@@ -20,20 +20,6 @@ using namespace std;
     loop(i, 0, v.size()) cout << v[i] << " "; \
     cout << endl;
 
-pii checkAP(vi apple)
-{
-    int d = apple[1] - apple[0], dif;
-    loop(i, 2, apple.size())
-    {
-        dif = apple[i] - apple[i - 1];
-        if (d != dif)
-        {
-            return {false, -1};
-        }
-    }
-    return {true, d};
-} // -- O(n) whole array.. no worries
-
 int32_t main()
 {
     fastio;
@@ -42,40 +28,32 @@ int32_t main()
     //     freopen("output.txt", "w", stdout);
     // #endif
 
-    int n;
-    cin >> n;
-    vi entries(n);
-    map<int, vi> katy;
-    loop(i, 0, n)
+    int n, m;
+    cin >> n >> m;
+    vi katy(n, INT_MAX);
+    vi perry(n);
+
+    loop(i, 0, m)
     {
-        cin >> entries[i];
-        katy[entries[i]].pb(i + 1);
-    }
-
-    vector<pii> wideawake;
-
-    for (auto roar : katy)
-    {
-        // debugvi(roar.s);
-        if (roar.s.size() == 1)
+        int l, r, t, c;
+        cin >> l >> r >> t >> c;
+        l--, r--;
+        loop(k, l, r + 1)
         {
-            wideawake.pb({roar.f, 0});
-        }
-
-        else
-        {
-            pii cd = checkAP(roar.s);
-            if (cd.f)
+            if (t < katy[k])
             {
-                wideawake.pb({roar.f, cd.s});
+                katy[k] = t;
+                perry[k] = c;
             }
         }
     }
-
-    cout << wideawake.size() << endl;
-    loop(i, 0, wideawake.size())
+    // debugvi(katy);
+    // debugvi(perry);
+    int sum = 0;
+    loop(i, 0, n)
     {
-        cout << wideawake[i].f << " " << wideawake[i].s << endl;
+        sum += perry[i];
     }
+    cout << sum << endl;
     return 0;
 }

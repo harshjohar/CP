@@ -48,7 +48,6 @@
 + 1535a [https://codeforces.com/contest/1535/problem/A]
 + 1535b [https://codeforces.com/contest/1535/problem/B]
 + 376b [https://codeforces.com/contest/376/problem/B]
-+ 352b [https://codeforces.com/contest/352/problem/B] -- pending
 
 ### Day9
 + 1536a [https://codeforces.com/contest/1536/problem/B]
@@ -64,9 +63,16 @@
 + 339b [https://codeforces.com/contest/339/problem/B]
 + 1525b [https://codeforces.com/contest/1525/problem/B]
 
+### Day 12
++ 1541a [https://codeforces.com/contest/1541/problem/B]
++ 518b [https://codeforces.com/contest/518/problem/B]
++ 352b [https://codeforces.com/contest/352/problem/B]
++ 69a [https://codeforces.com/contest/69/problem/A]
++ 69b [https://codeforces.com/contest/69/problem/B]
+
 ### Incompelete
-+ 1541a
 + 1534a
 + 1504a
 + 1529b
 + 1537b
++ 518b first approach

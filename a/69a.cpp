@@ -21,26 +21,18 @@ int32_t main() {
     //     freopen("input.txt", "r", stdin);
     //     freopen("output.txt", "w", stdout);
     // #endif
-    
+    int xt=0, yt=0, zt=0;
     testcase {
-        int n; cin>>n;
-        if(!(n%2)) {
-            loop(i, 1, n+1) {
-                cout<<i+1<<' ';
-                cout<<i<<' ';
-                i++;
-            }
-            cout<<endl;
-        }
-        else {
-            loop(i, 1, n-2) {
-                cout<<i+1<<' ';
-                cout<<i<<' ';
-                i++;
-            }
-            cout<<n<<' '<<n-2<<' '<<n-1<<endl;
-        }
-
+        int x, y, z;
+        cin>>x>>y>>z;
+        xt+=x, yt+=y, zt+=z;
     }
+    if(xt==0 and yt==0 and zt==0) {
+        cout<<"YES"<<endl;
+    }   
+    else {
+        cout<<"NO"<<endl;
+    }
+    
     return 0;
 }

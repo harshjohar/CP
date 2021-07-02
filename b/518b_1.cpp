@@ -14,7 +14,7 @@ using namespace std;
 #define debug(x) cout<<(#x)<<": "<<x<<endl
 #define debugvi(v) cout<<(#v)<<": "; loop(i, 0, v.size()) cout<<v[i]<<" "; cout<<endl;
 
-
+// map approach, but doosri v krni hai !!!!!!!!!!!!!!!!!!!!!
 int32_t main() {
     fastio;
     // #ifndef ONLINE_JUDGE
@@ -22,25 +22,34 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    testcase {
-        int n; cin>>n;
-        if(!(n%2)) {
-            loop(i, 1, n+1) {
-                cout<<i+1<<' ';
-                cout<<i<<' ';
-                i++;
-            }
-            cout<<endl;
+    string target, newspaper;
+    cin>>target>>newspaper;
+
+    map<char, int> nav;
+    map<char, int> neet;
+    for(char i: newspaper) {nav[i]+=1;}
+
+    int yayy = 0, whoops = 0;
+
+    for(char i: target) {
+        if(nav[i]) {
+            yayy++;
+            nav[i]--;
         }
         else {
-            loop(i, 1, n-2) {
-                cout<<i+1<<' ';
-                cout<<i<<' ';
-                i++;
-            }
-            cout<<n<<' '<<n-2<<' '<<n-1<<endl;
+            neet[i]++;
         }
-
     }
+
+    for(pii ch: neet) {
+        if((int)ch.f>=65 and (int)ch.f<=90) {
+            whoops += min(ch.s, nav[ch.f+32]);
+        }
+        else {
+            whoops += min(ch.s, nav[ch.f-32]);
+        }
+    }
+
+    cout<<yayy<<" "<<whoops<<endl;
     return 0;
 }

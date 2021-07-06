@@ -63,12 +63,18 @@
 + 339b [https://codeforces.com/contest/339/problem/B]
 + 1525b [https://codeforces.com/contest/1525/problem/B]
 
-### Day 12
-+ 1541a [https://codeforces.com/contest/1541/problem/B]
+### Day12
++ 1541a [https://codeforces.com/contest/1541/problem/A]
 + 518b [https://codeforces.com/contest/518/problem/B]
 + 352b [https://codeforces.com/contest/352/problem/B]
 + 69a [https://codeforces.com/contest/69/problem/A]
 + 69b [https://codeforces.com/contest/69/problem/B]
+
+
+### Day13
++ 1542a [https://codeforces.com/contest/1542/problem/B]
++ 478a [https://codeforces.com/contest/478/problem/A]
++ 69c [https://codeforces.com/contest/69/problem/C]
 
 ### Incompelete
 + 1534a

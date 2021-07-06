@@ -31,7 +31,7 @@ typedef map<string, int>::iterator it;
 int k, n, m, q;
 int32_t main()
 {
-    fastio;
+    // fastio;
     // #ifndef ONLINE_JUDGE
     //     freopen("input.txt", "r", stdin);
     //     freopen("output.txt", "w", stdout);
@@ -105,9 +105,9 @@ int32_t main()
         }
     }
     // cout<<"hello"<<endl;
-    debug(n);
-    debug(k);
-    debug(m);
-    debug(q);
+    // debug(n);
+    // debug(k);
+    // debug(m);
+    // debug(q);
     return 0;
 }

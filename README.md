@@ -76,6 +76,14 @@
 + 478a [https://codeforces.com/contest/478/problem/A]
 + 69c [https://codeforces.com/contest/69/problem/C]
 
+### Day14
++ 558a [https://codeforces.com/contest/558/problem/A]
++ 1542b [https://codeforces.com/contest/1542/problem/B]
++ 1370a [https://codeforces.com/contest/1370/problem/A]
++ 1543a [https://codeforces.com/contest/1543/problem/A]
++ 1543b [https://codeforces.com/contest/1543/problem/B]
++ 1541b [https://codeforces.com/contest/1541/problem/B]
+
 ### Incompelete
 + 1534a
 + 1504a

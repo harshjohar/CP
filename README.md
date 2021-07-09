@@ -84,9 +84,16 @@
 + 1543b [https://codeforces.com/contest/1543/problem/B]
 + 1541b [https://codeforces.com/contest/1541/problem/B]
 
+
+### Day15
++ 1537b [https://codeforces.com/contest/1537/problem/B]
++ 75a [https://codeforces.com/contest/75/problem/A]
++ 1543d1 [https://codeforces.com/contest/1543/problem/D1]
+
 ### Incompelete
 + 1534a
 + 1504a
 + 1529b
-+ 1537b
-+ 518b first approach
++ 219c
++ 567c
++ 577b

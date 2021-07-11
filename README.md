@@ -70,7 +70,6 @@
 + 69a [https://codeforces.com/contest/69/problem/A]
 + 69b [https://codeforces.com/contest/69/problem/B]
 
-
 ### Day13
 + 1542a [https://codeforces.com/contest/1542/problem/B]
 + 478a [https://codeforces.com/contest/478/problem/A]
@@ -84,16 +83,20 @@
 + 1543b [https://codeforces.com/contest/1543/problem/B]
 + 1541b [https://codeforces.com/contest/1541/problem/B]
 
-
 ### Day15
 + 1537b [https://codeforces.com/contest/1537/problem/B]
 + 75a [https://codeforces.com/contest/75/problem/A]
 + 1543d1 [https://codeforces.com/contest/1543/problem/D1]
 
-### Incompelete
+## Day16
++ 567c [https://codeforces.com/contest/567/problem/C]
++ 58a [https://codeforces.com/contest/58/problem/A]
++ 58b [https://codeforces.com/contest/58/problem/B]
++ 577a [https://codeforces.com/contest/577/problem/A]
++ 577b [https://codeforces.com/contest/577/problem/B]
+
+### Incomplete
 + 1534a
 + 1504a
 + 1529b
 + 219c
-+ 567c
-+ 577b

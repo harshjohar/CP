@@ -95,8 +95,13 @@
 + 577a [https://codeforces.com/contest/577/problem/A]
 + 577b [https://codeforces.com/contest/577/problem/B]
 
+## Day17
++ 1547a [https://codeforces.com/contest/1547/problem/A]
++ 1547b [https://codeforces.com/contest/1547/problem/B]
+
 ### Incomplete
 + 1534a
 + 1504a
 + 1529b
 + 219c
++ 1546a

@@ -99,9 +99,17 @@
 + 1547a [https://codeforces.com/contest/1547/problem/A]
 + 1547b [https://codeforces.com/contest/1547/problem/B]
 
+## Day18
++ 1520a [https://codeforces.com/contest/1520/problem/A]
++ 1520b [https://codeforces.com/contest/1520/problem/B]
++ 1520d [https://codeforces.com/contest/1520/problem/D]
++ 1546a [https://codeforces.com/contest/1546/problem/A]
++ 1539b [https://codeforces.com/contest/1539/problem/B]
+
 ### Incomplete
 + 1534a
 + 1504a
 + 1529b
 + 219c
++ 1547c
 + 1546a

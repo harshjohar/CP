@@ -106,6 +106,11 @@
 + 1546a [https://codeforces.com/contest/1546/problem/A]
 + 1539b [https://codeforces.com/contest/1539/problem/B]
 
+## Day19
++ 489a [https://codeforces.com/problemset/problem/489/A]
++ 489c [https://codeforces.com/problemset/problem/489/C]
++ 489b [https://codeforces.com/problemset/problem/489/B]
+
 ### Incomplete
 + 1534a
 + 1504a
@@ -113,3 +118,5 @@
 + 219c
 + 1547c
 + 1546a
++ 1520c
++ 696c

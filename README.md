@@ -111,6 +111,9 @@
 + 489c [https://codeforces.com/problemset/problem/489/C]
 + 489b [https://codeforces.com/problemset/problem/489/B]
 
+### Day20
++ 696c [https://codeforces.com/problemset/problem/696/C] __submission number 69__
+
 ### Incomplete
 + 1534a
 + 1504a

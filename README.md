@@ -111,8 +111,12 @@
 + 489c [https://codeforces.com/problemset/problem/489/C]
 + 489b [https://codeforces.com/problemset/problem/489/B]
 
-### Day20
+## Day20
 + 696c [https://codeforces.com/problemset/problem/696/C] __submission number 69__
+
+## Day21
++ 1348a
++ 698a
 
 ### Incomplete
 + 1534a
@@ -122,4 +126,3 @@
 + 1547c
 + 1546a
 + 1520c
-+ 696c

@@ -25,26 +25,7 @@ int32_t main() {
     testcase {
         int n, x, k;
         cin>>n>>x>>k;
-        if(k<x) {
-            cout<<0<<endl;
-        }
-        if(k==x) {
-            cout<<n-1<<endl;
-        }
-        int sub=0, sum=0;
-        if(k>x) {
-            if(((n-1)*x)%k==0) {
-                int fi = (k*(k-1)/2);
-                int se = k*(n-k);
-                sum = fi+se;
-            }
-            else {
-
-                sum = n*(n-1)/2;
-                sub = (n-1)*x/k;
-            }
-            cout<<sum-sub<<endl;
-        }
+        cout<<(max(0LL, n-k/x))*(k/x)+(min(n-1, k/x-1))*(min(n, k/x))/2<<endl;
     }
     return 0;
 }

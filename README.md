@@ -56,7 +56,6 @@
 
 ### Day10
 + 127a [https://codeforces.com/contest/127/problem/A]
-+ 1539a [https://codeforces.com/contest/1539/problem/A]
 
 ### Day11
 + 339a [https://codeforces.com/contest/339/problem/A]
@@ -115,14 +114,18 @@
 + 696c [https://codeforces.com/problemset/problem/696/C] __submission number 69__
 
 ## Day21
-+ 1348a
-+ 698a
++ 1348a [https://codeforces.com/problemset/problem/1348/A]
++ 698a [https://codeforces.com/problemset/problem/698/A]
+
+## Day22
++ 1504a [https://codeforces.com/problemset/problem/1504/A]
++ 1539a [https://codeforces.com/problemset/problem/1539/A]
 
 ### Incomplete
 + 1534a
-+ 1504a
 + 1529b
 + 219c
 + 1547c
 + 1546a
 + 1520c
++ 1539a [https://codeforces.com/problemset/problem/1539/A]

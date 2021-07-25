@@ -121,6 +121,15 @@
 + 1504a [https://codeforces.com/problemset/problem/1504/A]
 + 1539a [https://codeforces.com/problemset/problem/1539/A]
 
+## Day23
++ 1350a [https://codeforces.com/problemset/problem/1350/A]
++ 586a [https://codeforces.com/problemset/problem/586/A]
++ 1551a [https://codeforces.com/problemset/problem/1551/A]
++ 1553a [https://codeforces.com/problemset/problem/1553/A]
+
+## Day24
++ 1550b [https://codeforces.com/problemset/problem/1550/B]
+
 ### Incomplete
 + 1534a
 + 1529b
@@ -128,4 +137,4 @@
 + 1547c
 + 1546a
 + 1520c
-+ 1539a [https://codeforces.com/problemset/problem/1539/A]
++ 1551b1

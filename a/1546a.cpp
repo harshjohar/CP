@@ -37,7 +37,7 @@ int32_t main() {
 
         loop(i, 0, n) {
             if(a[i]>b[i]) {
-                
+                []
             }
         }
     }

@@ -128,7 +128,11 @@
 + 1553a [https://codeforces.com/problemset/problem/1553/A]
 
 ## Day24
+#### Just for streak : (
 + 1550b [https://codeforces.com/problemset/problem/1550/B]
++ 262a [https://codeforces.com/problemset/problem/262/A]
++ 53a [https://codeforces.com/problemset/problem/53/A]
++ 1075a [https://codeforces.com/problemset/problem/1075/A]
 
 ### Incomplete
 + 1534a

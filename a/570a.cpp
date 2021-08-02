@@ -67,22 +67,29 @@ int32_t main() {
     
     int n, m;
     cin>>n>>m;
-    vi grps(n);
-    int buses=1;
-    loop(i, 0, n) {
-        cin>>grps[i];
-    }
-    int tmp=0;
-    loop(i, 0, n) {
-        if(tmp+grps[i] > m) {
-            buses++;
-            tmp=grps[i];
+    vi candidates(n);
+    int max_idx = 0, maxi=0;
+    vector<vi> katy(m, vi(n));
+    loop(i, 0, m) {
+        max_idx=0, maxi=0;
+        loop(j, 0, n) {
+            cin>>katy[i][j];
+            if(katy[i][j]>maxi) {
+                maxi=katy[i][j];
+                max_idx=j;
+            }
         }
-        else {
-            tmp+=grps[i];
-        }
-        // debug(tmp);
+        candidates[max_idx]++;
     }
-    cout<<buses<<endl;
+
+    // debugvi(candidates);
+    max_idx = 0, maxi=0;
+    loop(i, 0, n) {
+        if(candidates[i]>maxi) {
+            maxi=candidates[i];
+            max_idx=i;
+        } 
+    }
+    cout<<max_idx+1<<endl;
     return 0;
 }

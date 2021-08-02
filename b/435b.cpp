@@ -58,31 +58,35 @@ using namespace std;
 //                         / `._|                     |   \`-.__.,'
 //                 _______(____/                       \___\__
 
+string st; int n, len;
+
+void KrdeyoKmHunEda(int idx) {
+    char maxi = st[idx];
+    int max_idx = idx;
+    for(int i=idx+1; i<len && i<=idx+n; i++) {
+        if(st[i]>maxi) {
+            maxi=st[i];
+            max_idx=i;
+        }
+    }
+    for(int i=max_idx; i>idx; i--) {
+        st[i]=st[i-1];
+    }
+    st[idx] = maxi;
+    n=n-(max_idx-idx);
+}
+
 int32_t main() {
     fastio;
     // #ifndef ONLINE_JUDGE
     //     freopen("input.txt", "r", stdin);
     //     freopen("output.txt", "w", stdout);
     // #endif
-    
-    int n, m;
-    cin>>n>>m;
-    vi grps(n);
-    int buses=1;
-    loop(i, 0, n) {
-        cin>>grps[i];
+    cin>>st>>n;
+    len = st.length();
+    for(int i=0; i<len && n>0; i++) {
+        KrdeyoKmHunEda(i);
     }
-    int tmp=0;
-    loop(i, 0, n) {
-        if(tmp+grps[i] > m) {
-            buses++;
-            tmp=grps[i];
-        }
-        else {
-            tmp+=grps[i];
-        }
-        // debug(tmp);
-    }
-    cout<<buses<<endl;
+    cout<<st<<endl;
     return 0;
 }

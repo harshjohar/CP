@@ -134,6 +134,14 @@
 + 53a [https://codeforces.com/problemset/problem/53/A]
 + 1075a [https://codeforces.com/problemset/problem/1075/A]
 
+
+## Day25
++ 435a
++ 435b
++ 651a
++ 570a
++ 118a
+
 ### Incomplete
 + 1534a
 + 1529b

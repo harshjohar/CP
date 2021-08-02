@@ -65,24 +65,18 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    int n, m;
-    cin>>n>>m;
-    vi grps(n);
-    int buses=1;
-    loop(i, 0, n) {
-        cin>>grps[i];
-    }
-    int tmp=0;
-    loop(i, 0, n) {
-        if(tmp+grps[i] > m) {
-            buses++;
-            tmp=grps[i];
+    string word;
+    cin>>word;
+
+    for(char ch:word) {
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch == 'y' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U' || ch=='Y') {
+            continue;
         }
-        else {
-            tmp+=grps[i];
+        else if(ch>=65 and ch<=90) {
+            ch+=('a'-'A');
         }
-        // debug(tmp);
+        cout<<'.'<<ch;
     }
-    cout<<buses<<endl;
+    cout<<endl;
     return 0;
 }

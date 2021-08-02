@@ -65,24 +65,14 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    int n, m;
-    cin>>n>>m;
-    vi grps(n);
-    int buses=1;
+    string st; cin>>st;
+    int ans = 0;
+    int n = st.length();
+    char curr = 'a';
     loop(i, 0, n) {
-        cin>>grps[i];
+        ans+=min(abs(st[i]-curr), 26-abs(st[i]-curr));
+        curr = st[i];
     }
-    int tmp=0;
-    loop(i, 0, n) {
-        if(tmp+grps[i] > m) {
-            buses++;
-            tmp=grps[i];
-        }
-        else {
-            tmp+=grps[i];
-        }
-        // debug(tmp);
-    }
-    cout<<buses<<endl;
+    cout<<ans<<endl;
     return 0;
 }

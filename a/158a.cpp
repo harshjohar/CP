@@ -57,8 +57,7 @@ using namespace std;
 //                 ``--''"\._   |      `-.____.,-'    | `._        )
 //                         / `._|                     |   \`-.__.,'
 //                 _______(____/                       \___\__
-string st[55];
-char chrs[] = {'R', 'W'};
+
 int32_t main() {
     fastio;
     // #ifndef ONLINE_JUDGE
@@ -66,38 +65,18 @@ int32_t main() {
     //     freopen("output.txt", "w", stdout);
     // #endif
     
-    testcase {
-        int n, m;
-        cin>>n>>m;
-        vi r(2), w(2);
-        loop(i, 0, n) {
-            cin>>st[i];
-            loop(j, 0, m) {
-                if(st[i][j]=='R') {
-                    r[i+j&1]=1;
-                }
-                else if(st[i][j]=='W') {
-                    w[i+j&1]=1;
-                }
-            }
-        }
-        int x = r[1] or w[0];
-        int y = w[1] or r[0];
-        if(x and y) {
-            cout<<"NO"<<endl;
-            continue;
-        }
-        cout<<"YES"<<endl;
-        loop(i, 0, n) {
-            loop(j, 0, m) {
-                char c = chrs[i+j+x&1];
-                cout<<c;
-                if(st[i][j]!='.') {
-                    assert(st[i][j]==c);    // mission abort if false;
-                }
-            }
-            cout<<endl;
+    int n, k;
+    cin>>n>>k;
+    vi scores(n+1);
+    loop(i, 1, n+1) {
+        cin>>scores[i];
+    }
+    int ans=0;
+    loop(i, 1, n+1) {
+        if(scores[i]>=scores[k] and scores[i]>0) {
+            ans++;
         }
     }
+    cout<<ans<<endl;
     return 0;
 }

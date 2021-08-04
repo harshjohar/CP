@@ -1,20 +1,25 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 #define vi vector<int>
 #define int long long int
 #define pb push_back
-#define loop(i, a, b) for(int i=a; i<b; i++)
-#define loopb(i, a, b) for(int i=a; i>=b; i--)
-#define testcase int t; cin>>t; while(t--)
+#define loop(i, a, b) for (int i = a; i < b; i++)
+#define loopb(i, a, b) for (int i = a; i >= b; i--)
+#define testcase \
+    int t;       \
+    cin >> t;    \
+    while (t--)
 #define pii pair<int, int>
 #define mii map<int, int>
 #define f first
 #define s second
 #define fastio ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0)
 #define endl "\n";
-#define debug(x) cout<<(#x)<<": "<<x<<endl
-#define debugvi(v) cout<<(#v)<<": "; loop(i, 0, v.size()) cout<<v[i]<<" "; cout<<endl;
-
+#define debug(x) cout << (#x) << ": " << x << endl
+#define debugvi(v)                            \
+    cout << (#v) << ": ";                     \
+    loop(i, 0, v.size()) cout << v[i] << " "; \
+    cout << endl;
 
 //                                      _________.
 //                                  __,-'          `-.
@@ -57,46 +62,45 @@ using namespace std;
 //                 ``--''"\._   |      `-.____.,-'    | `._        )
 //                         / `._|                     |   \`-.__.,'
 //                 _______(____/                       \___\__
-string st[55];
-char chrs[] = {'R', 'W'};
-int32_t main() {
+
+int32_t main()
+{
     fastio;
-    // #ifndef ONLINE_JUDGE
-    //     freopen("input.txt", "r", stdin);
-    //     freopen("output.txt", "w", stdout);
-    // #endif
-    
-    testcase {
-        int n, m;
-        cin>>n>>m;
-        vi r(2), w(2);
-        loop(i, 0, n) {
-            cin>>st[i];
-            loop(j, 0, m) {
-                if(st[i][j]=='R') {
-                    r[i+j&1]=1;
-                }
-                else if(st[i][j]=='W') {
-                    w[i+j&1]=1;
-                }
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif
+
+    testcase
+    {
+        int n;
+        cin >> n;
+        int hehe = 2050;
+        bool valid = true;
+        int ans = 0;
+        while (n && hehe >= 205)
+        {
+
+            if (!(n % (hehe * 10)))
+            {
+                hehe *= 10;
             }
-        }
-        int x = r[1] or w[0];
-        int y = w[1] or r[0];
-        if(x and y) {
-            cout<<"NO"<<endl;
-            continue;
-        }
-        cout<<"YES"<<endl;
-        loop(i, 0, n) {
-            loop(j, 0, m) {
-                char c = chrs[i+j+x&1];
-                cout<<c;
-                if(st[i][j]!='.') {
-                    assert(st[i][j]==c);    // mission abort if false;
-                }
+            else if (!(n % hehe))
+            {
+                n -= hehe;
+                hehe /= 10;
+                ans+=1;
             }
-            cout<<endl;
+            else
+            {
+                cout << -1 << endl;
+                valid=false;
+                break;
+            }
+            // debug(hehe); debug(n);
+        }
+        if(valid) {
+            cout<<ans<<endl;
         }
     }
     return 0;

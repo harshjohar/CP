@@ -57,8 +57,7 @@ using namespace std;
 //                 ``--''"\._   |      `-.____.,-'    | `._        )
 //                         / `._|                     |   \`-.__.,'
 //                 _______(____/                       \___\__
-string st[55];
-char chrs[] = {'R', 'W'};
+
 int32_t main() {
     fastio;
     // #ifndef ONLINE_JUDGE
@@ -67,36 +66,20 @@ int32_t main() {
     // #endif
     
     testcase {
-        int n, m;
-        cin>>n>>m;
-        vi r(2), w(2);
+        int n; cin>>n;
+        int check=true;
         loop(i, 0, n) {
-            cin>>st[i];
-            loop(j, 0, m) {
-                if(st[i][j]=='R') {
-                    r[i+j&1]=1;
-                }
-                else if(st[i][j]=='W') {
-                    w[i+j&1]=1;
-                }
+            int x; cin>>x;
+            int y = sqrt(x);
+            // cout<<y*y<<' '<<x<<endl;
+            if(x!=y*y) {
+                check=false;
             }
         }
-        int x = r[1] or w[0];
-        int y = w[1] or r[0];
-        if(x and y) {
+        if(check) {
             cout<<"NO"<<endl;
-            continue;
-        }
-        cout<<"YES"<<endl;
-        loop(i, 0, n) {
-            loop(j, 0, m) {
-                char c = chrs[i+j+x&1];
-                cout<<c;
-                if(st[i][j]!='.') {
-                    assert(st[i][j]==c);    // mission abort if false;
-                }
-            }
-            cout<<endl;
+        } else {
+            cout<<"YES"<<endl;
         }
     }
     return 0;

@@ -136,17 +136,30 @@
 
 
 ## Day25
-+ 435a
-+ 435b
-+ 651a
-+ 570a
-+ 118a
++ 435a [https://codeforces.com/problemset/problem/435/A]
++ 435b [https://codeforces.com/problemset/problem/435/B]
++ 651a [https://codeforces.com/problemset/problem/651/A]
++ 570a [https://codeforces.com/problemset/problem/570/A]
++ 118a [https://codeforces.com/problemset/problem/118/A]
+
+## Day26
++ 1534a [https://codeforces.com/problemset/problem/1534/A]
++ 158a [https://codeforces.com/problemset/problem/158/A]
++ 1514a [https://codeforces.com/problemset/problem/1514/A]
++ 318a [https://codeforces.com/problemset/problem/318/A]
++ 1517a [https://codeforces.com/problemset/problem/1517/A]
++ 337a [https://codeforces.com/problemset/problem/337/A]
+
+## Day27
++ 1554a [https://codeforces.com/problemset/problem/1554/A]
++ 530a [https://codeforces.com/problemset/problem/530/A]
++ 281a [https://codeforces.com/problemset/problem/281/A]
 
 ### Incomplete
-+ 1534a
 + 1529b
 + 219c
 + 1547c
 + 1546a
 + 1520c
 + 1551b1
++ 304a

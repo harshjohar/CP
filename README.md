@@ -102,6 +102,14 @@
 ### YEAR 1 over :\\
 + 1560a [https://codeforces.com/problemset/problem/1560/A]
 + 1560b [https://codeforces.com/problemset/problem/1560/B]
++ 266a [https://codeforces.com/problemset/problem/266/A]
++ 427a [https://codeforces.com/problemset/problem/427/A]
++ 431a [https://codeforces.com/problemset/problem/431/A]
++ 731a [https://codeforces.com/problemset/problem/731/A]
++ 268a [https://codeforces.com/problemset/problem/268/A]
++ 732a [https://codeforces.com/problemset/problem/732/A]
++ 47b [https://codeforces.com/problemset/problem/47/B]
+
 
 
 ### Incomplete
@@ -113,3 +121,4 @@
 + 1551b1
 + 304a
 + 1560c
++ 227b

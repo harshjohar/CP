@@ -1,25 +1,20 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 #define vi vector<int>
 #define int long long int
 #define pb push_back
-#define loop(i, a, b) for (int i = a; i < b; i++)
-#define loopb(i, a, b) for (int i = a; i >= b; i--)
-#define testcase \
-    int t;       \
-    cin >> t;    \
-    while (t--)
+#define loop(i, a, b) for(int i=a; i<b; i++)
+#define loopb(i, a, b) for(int i=a; i>=b; i--)
+#define testcase int t; cin>>t; while(t--)
 #define pii pair<int, int>
 #define mii map<int, int>
 #define f first
 #define s second
 #define fastio ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0)
 #define endl "\n";
-#define debug(x) cout << (#x) << ": " << x << endl
-#define debugvi(v)                            \
-    cout << (#v) << ": ";                     \
-    loop(i, 0, v.size()) cout << v[i] << " "; \
-    cout << endl;
+#define debug(x) cout<<(#x)<<": "<<x<<endl
+#define debugvi(v) cout<<(#v)<<": "; loop(i, 0, v.size()) cout<<v[i]<<" "; cout<<endl;
+
 
 //                                      _________.
 //                                  __,-'          `-.
@@ -63,26 +58,42 @@ using namespace std;
 //                         / `._|                     |   \`-.__.,'
 //                 _______(____/                       \___\__
 
-int32_t main()
-{
+int32_t main() {
     fastio;
     // #ifndef ONLINE_JUDGE
     //     freopen("input.txt", "r", stdin);
     //     freopen("output.txt", "w", stdout);
     // #endif
-
-    int n;
-    cin >> n;
-    string st;
-    cin >> st;
-    int ans = 0;
-    loop(i, 0, n-1)
-    {
-        if (st[i] == st[i + 1])
-        {
-            ans++;
+    
+    string coins;
+    vi KatyPerry(3);
+    loop(i, 0, 3) {
+        cin>>coins;
+        if(coins[1]=='>') {
+            KatyPerry[coins[2]-'A']++;
+        } 
+        else {
+            KatyPerry[coins[0]-'A']++;
         }
     }
-    cout << ans << endl;
+    // debugvi(KatyPerry);
+    if(KatyPerry[0]==KatyPerry[1] or KatyPerry[0]==KatyPerry[2] or KatyPerry[1]==KatyPerry[2]) {
+        cout<<"Impossible"<<endl;
+        return 0;
+    }
+
+    // KatyPerry stores the seniority
+
+    vector<pair<int, char>> Firework;
+    Firework.pb({KatyPerry[0], 'A'});
+    Firework.pb({KatyPerry[1], 'B'});
+    Firework.pb({KatyPerry[2], 'C'});
+
+    sort(Firework.begin(), Firework.end());
+
+    loopb(i, Firework.size()-1 , 0) {
+        cout<<Firework[i].s;
+    }
+    cout<<endl;
     return 0;
 }

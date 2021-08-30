@@ -13,7 +13,7 @@ using namespace std;
 #define fastio ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0)
 #define endl "\n";
 #define debug(x) cout<<(#x)<<": "<<x<<endl
-#define debugvi(v) cout<<(#v)<<": "; loop(i, 0, v.size()) cout<<v[i]<<endl; cout<<endl;
+#define debugvi(v) cout<<(#v)<<": "; loop(i, 0, v.size()) cout<<v[i]<<" "; cout<<endl;
 
 
 //                                      _________.
@@ -58,36 +58,22 @@ using namespace std;
 //                         / `._|                     |   \`-.__.,'
 //                 _______(____/                       \___\__
 
-int req_num(int x) {
-    if(x%10==3) return 0;
-    int sum_ = 0;
-    while(x) {
-        sum_ += x%10;
-        x/=10;
-    }
-    if(!(sum_%3)) return 0;
-    return 1;
-}
-
 int32_t main() {
     fastio;
     // #ifndef ONLINE_JUDGE
     //     freopen("input.txt", "r", stdin);
-        // freopen("output.txt", "w", stdout);
+    //     freopen("output.txt", "w", stdout);
     // #endif
     
-    vi numbers;
-    loop(i, 1, 2200) {
-        if(req_num(i)) {
-            numbers.pb(i);
+    testcase {
+        int l, r;
+        cin>>l>>r;
+        int checker = (r/2) + 1;
+        if(l<=checker) {
+            cout<<(r-1)/2<<endl;
+        } else {
+            cout<<r-l<<endl;
         }
     }
-    testcase {
-        int k; cin>>k;
-        cout<<numbers[k-1]<<endl;
-    }
-    // cout<<numbers.size()<<endl;
-    // debugvi(numbers);
-    // cout<<numbers[numbers.size()-1];
     return 0;
 }

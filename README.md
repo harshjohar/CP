@@ -109,7 +109,8 @@
 + 268a [https://codeforces.com/problemset/problem/268/A]
 + 732a [https://codeforces.com/problemset/problem/732/A]
 + 47b [https://codeforces.com/problemset/problem/47/B]
-
++ 1561a [https://codeforces.com/problemset/problem/1561/A]
++ 304a
 
 
 ### Incomplete
@@ -119,6 +120,5 @@
 + 1546a
 + 1520c
 + 1551b1
-+ 304a
 + 1560c
 + 227b

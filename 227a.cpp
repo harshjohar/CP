@@ -71,27 +71,39 @@ int32_t main()
     //     freopen("output.txt", "w", stdout);
     // #endif
 
-    // pythagorean triplet
-    // 2m, m^2+1, m^2-1
+    float xa, xb, xc, ya, yb, yc;
+    float initial_slope, final_slope;
+    cin >> xa >> ya >> xb >> yb >> xc >> yc;
+    if (xb == xa)
+        initial_slope = INT32_MAX;
+    else
+        initial_slope = (yb - ya) / (xb - xa);
+    if (xc == xb)
+        final_slope = INT32_MAX;
+    else
+        final_slope = (yc - yb) / (xc - xb);
 
-    int n;
-    cin >> n;
-    int ans = 0;
-    for (int i = 1; i <= n; i++)
+    debug(initial_slope);
+    debug(final_slope);
+    
+    if(initial_slope==final_slope)
     {
-        int x = i;
-        for (int j = i + 1; j <= n; j++)
-        {
-            while (i * i + j * j > x * x and x < n)
-            {
-                x++;
+        cout << "TOWARDS" << endl;
+    }
+    else {  // 4 cases
+        // + +
+        if(initial_slope>=0 and final_slope>=0) {
+            if(initial_slope>final_slope) {
+                cout<<"RIGHT"<<endl;
             }
-            if (x * x == i * i + j * j)
-            {
-                ans++;
+            else {
+                cout<<"LEFT"<<endl;
             }
         }
+        // + - 
+        if(initial_slope>=0 and final_slope<=0) {
+            if()
+        }
     }
-    cout << ans << endl;
     return 0;
 }

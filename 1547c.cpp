@@ -18,52 +18,18 @@ using namespace std;
 
 int32_t main() {
     fastio;
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     freopen("input.txt", "r", stdin);
+    //     freopen("output.txt", "w", stdout);
+    // #endif
     testcase {
         int k, n, m;
         cin>>k>>n>>m;
-        vi mono(n), poly(m);
-        int zeroes=0;
-        int maxi = 0;
-        loop(i, 0, n) {
-            cin>>mono[i];
-            if(mono[i]==0) {
-                zeroes++;
-            }
-            maxi = max(maxi, mono[i]);
-        }
-        // debug(zeroes);
-        loop(i, 0, m) {
-            cin>>poly[i];
-            if(poly[i]==0) {
-                zeroes++;
-            }
-            maxi = max(maxi, poly[i]);
-        }
-        // debug(zeroes);
-        if(maxi>k+zeroes) {
-            cout<<-1;
-        }
-        else {
-            loop(i, 0, zeroes) {
-                cout<<0<<' ';
-            }
-            loop(i, 0, n) {
-                if(mono[i]) {
-                    cout<<mono[i]<<' ';
-                }
-            }
-
-            loop(i, 0, m) {
-                if(poly[i]) {
-                    cout<<poly[i]<<' ';
-                }
-            }
-        }
-        cout<<endl;
+        vi a(n), b(n);
+        loop(i, 0, n) cin>>a[i];
+        loop(i, 0, m) cin>>b[i];
+        vi ans;
+        
     }
     return 0;
 }

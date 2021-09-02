@@ -110,8 +110,14 @@
 + 732a [https://codeforces.com/problemset/problem/732/A]
 + 47b [https://codeforces.com/problemset/problem/47/B]
 + 1561a [https://codeforces.com/problemset/problem/1561/A]
-+ 304a
-
++ 304a [https://codeforces.com/problemset/problem/304/A]
++ 1562a [https://codeforces.com/problemset/problem/1562/A]
++ 1549a [https://codeforces.com/problemset/problem/1559/A]
++ 1549b [https://codeforces.com/problemset/problem/1549/B]
++ 1490c [https://codeforces.com/problemset/problem/1490/C]
++ 567a [https://codeforces.com/problemset/problem/567/A]
++ 1562b [https://codeforces.com/problemset/problem/1562/B]
++ 1559a [https://codeforces.com/problemset/problem/1559/C]
 
 ### Incomplete
 + 1529b
@@ -122,3 +128,4 @@
 + 1551b1
 + 1560c
 + 227b
++ 227a

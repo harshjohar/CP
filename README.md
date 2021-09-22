@@ -119,6 +119,11 @@
 + 1562b [https://codeforces.com/problemset/problem/1562/B]
 + 1559a [https://codeforces.com/problemset/problem/1559/C]
 + 1560c [https://codeforces.com/problemset/problem/1560/C]
++ 1574a [https://codeforces.com/contest/1574/problem/A]
++ 456a
++ 296a
++ 239a
++ 186a
 
 ### Incomplete
 + 1529b

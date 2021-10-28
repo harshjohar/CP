@@ -125,6 +125,9 @@
 + 239a [Link](https://codeforces.com/contest/239/problem/A)
 + 186a [Link](https://codeforces.com/contest/186/problem/A)
 + 476a [Link](https://codeforces.com/contest/476/problem/A)
++ 1579a [Link](https://codeforces.com/problemset/problem/1579/A)
++ 1437a [Link](https://codeforces.com/problemset/problem/1437/A)
++ 1506a [Link](https://codeforces.com/problemset/problem/1506/A)
 
 ### Incomplete
 + 1529b

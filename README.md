@@ -138,6 +138,9 @@
 + 1607a [Link](https://codeforces.com/problemset/problem/1607/A)
 + 1607b [Link](https://codeforces.com/problemset/problem/1607/B)
 + 1607c [Link](https://codeforces.com/problemset/problem/1607/C)
++ 1607d [Link](https://codeforces.com/problemset/problem/1607/D)
++ 1324a [Link](https://codeforces.com/problemset/problem/1324/A)
++ 1473b [Link](https://codeforces.com/problemset/problem/1473/B)
 
 ### Incomplete
 + 1529b

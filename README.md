@@ -135,6 +135,9 @@
 + 1511b [Link](https://codeforces.com/problemset/problem/1511/B)
 + 1525a [Link](https://codeforces.com/problemset/problem/1525/A)
 + 1606a [Link](https://codeforces.com/problemset/problem/1606/A)
++ 1607a [Link](https://codeforces.com/problemset/problem/1607/A)
++ 1607b [Link](https://codeforces.com/problemset/problem/1607/B)
++ 1607c [Link](https://codeforces.com/problemset/problem/1607/C)
 
 ### Incomplete
 + 1529b

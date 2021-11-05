@@ -128,6 +128,13 @@
 + 1579a [Link](https://codeforces.com/problemset/problem/1579/A)
 + 1437a [Link](https://codeforces.com/problemset/problem/1437/A)
 + 1506a [Link](https://codeforces.com/problemset/problem/1506/A)
++ 1593a [Link](https://codeforces.com/contest/1593/problem/A)
++ 313a [Link](https://codeforces.com/problemset/problem/313/A)
++ 1455a [Link](https://codeforces.com/problemset/problem/1455/A) 
++ 1475a [Link](https://codeforces.com/problemset/problem/1475/A)
++ 1511b [Link](https://codeforces.com/problemset/problem/1511/B)
++ 1525a [Link](https://codeforces.com/problemset/problem/1525/A)
++ 1606a [Link](https://codeforces.com/problemset/problem/1606/A)
 
 ### Incomplete
 + 1529b

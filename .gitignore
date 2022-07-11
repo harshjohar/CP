@@ -9,3 +9,6 @@ c/output.txt
 TrainingSheet(1).xlsx
 input.txt
 output.txt
+*/.cph/
+*/*/.bin
+/.cph/
